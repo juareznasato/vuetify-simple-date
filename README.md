@@ -1,6 +1,6 @@
-# vuetify-date
+# vuetify-simple-date
 
-If you use Vuejs with Vuetify and need a component to input dates and return milliseconds. It can help you.
+If you use Vuejs with Vuetify and need a component to input mask dates working in milliseconds. Maybe it can help you.
 
 
 input:
@@ -9,15 +9,15 @@ input:
 v-model: (milliseconds)
 1557802800000
 
-if you want a datetime picker component, you can try this:
+if you want a milliseconds datetime picker component, you can try this:
 <p><a href="https://github.com/juareznasato/vuetify-datetime.git" target="_blank">vuetify-datetime</a></p>
 
 ## Dependency
 - VueJS
-- Vuetify       $ npm install vuetify --save
-- moment        $ npm install moment --save 
-- vue-the-mask  $ npm install vue-the-mask --save
-- @mdi/font     $ npm install @mdi/font -D --save
+- Vuetify&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ npm install vuetify --save
+- moment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ npm install moment --save 
+- vue-the-mask&nbsp;&nbsp;$ npm install vue-the-mask --save
+- @mdi/font&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ npm install @mdi/font -D --save
 
 ## Links
 <p><a href="https://k6kzp.csb.app/">See DEMO here</a></p>

@@ -37,12 +37,12 @@ Vue.use(VuetifySimpleDate);
 export default VuetifySimpleDate;
 
 2- Add to src/mains.js file:
-import "./plugins/vuetify-date.js";
+import "./plugins/vuetify-simple-date.js";
 
 Parent component:
 <template>
   <div>
-     <VuetifySimpleDate v-model="value" v-bind:label="label" v-bind:options="options" />
+     <vuetify-simple-date v-model="value" v-bind:label="label" v-bind:options="options" />
      Parent v-model: {{ value }} milliseconds
   </div>
 </template>

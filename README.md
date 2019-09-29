@@ -1,6 +1,6 @@
 # vuetify-date
 
-If you use Vuejs with Vuetify and need a component to enter dates and returns milliseconds. It can help you.
+If you use Vuejs with Vuetify and need a component to input dates and return milliseconds. It can help you.
 
 
 input:
@@ -52,7 +52,7 @@ export default {
     value: 1569717750000,
     label: "Date yyyy-mm-dd hh:mm:ss",
     options: {
-      format: "YYYY-MM-DD",     // or YYYY-MM-DD HH:mm:ss
+      format: "YYYY-MM-DD",     // or others formats. YYYY-MM-DD HH:mm:ss for example
       clearable: true,
       readonly: false,
       icon: "mdi-calendar",

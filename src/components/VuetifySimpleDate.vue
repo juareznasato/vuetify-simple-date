@@ -10,6 +10,11 @@
       v-bind:readonly="options.readonly"
       v-bind:clearable="options.clearable"
       v-bind:hint="showHint===true ? options.errorMessage : ''"
+      v-on:change="$emit('change')"
+      v-on:input="$emit('input')"
+      v-on:keydown="$emit('keydown')"
+      v-on:focus="$emit('focus')"
+      v-on:blur="$emit('blur')"
     ></v-text-field>
   </div>
 </template>

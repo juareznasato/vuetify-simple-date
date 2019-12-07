@@ -12,13 +12,6 @@ v-model: (milliseconds)
 if you want a milliseconds datetime picker component, you can try this:
 <p><a href="https://github.com/juareznasato/vuetify-datetime.git" target="_blank">vuetify-datetime</a></p>
 
-## Dependency
-- VueJS
-- Vuetify&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ npm install vuetify --save
-- moment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ npm install moment --save 
-- vue-the-mask&nbsp;&nbsp;$ npm install vue-the-mask --save
-- @mdi/font&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ npm install @mdi/font -D --save
-
 ## Links
 <p><a href="https://k6kzp.csb.app/">See DEMO here</a></p>
 <p><a href="https://github.com/juareznasato/vuetify-simple-date" target="_blank">GitHub</a></p>
@@ -55,6 +48,7 @@ export default {
       format: "YYYY-MM-DD",     // or others formats. YYYY-MM-DD HH:mm:ss for example
       clearable: true,
       readonly: false,
+      outlined: false,
       icon: "mdi-calendar",
       errorMessage: "Invalid date"
     }

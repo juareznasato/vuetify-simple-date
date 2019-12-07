@@ -9,6 +9,7 @@
       v-bind:prepend-icon="options.icon"
       v-bind:readonly="options.readonly"
       v-bind:clearable="options.clearable"
+      v-bind:outlined="options.outlined"
       v-bind:hint="showHint===true ? options.errorMessage : ''"
       v-on:change="$emit('change')"
       v-on:input="$emit('input')"
@@ -40,7 +41,7 @@ export default {
     options: {
       type: Object,
       default: function() {
-        return { format: "DD/MM/YYYY", clearable: false, readonly: false , icon:"mdi-calendar", errorMessage: "Data Inválida"};
+        return { format: "DD/MM/YYYY", clearable: false, readonly: false , outlined: false, icon:"mdi-calendar", errorMessage: "Data Inválida"};
       }
     }
   },

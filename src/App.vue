@@ -39,6 +39,7 @@ export default {
       format: "DD/MM/YYYY", // DD/MM/YYYY HH:mm:ss
       clearable: true,
       readonly: false,
+      outlined: true,
       icon: "mdi-calendar",
       errorMessage: "Data Inválida"
     },
@@ -49,6 +50,7 @@ export default {
       format: "YYYY-MM-DD HH:mm:ss", // DD/MM/YYYY HH:mm:ss
       clearable: true,
       readonly: false,
+      outlined: false,
       icon: "mdi-calendar",
       errorMessage: "Invalid date"
     }

@@ -40,6 +40,7 @@ export default {
       clearable: true,
       readonly: false,
       outlined: true,
+      backgroundColor: "grey",
       icon: "mdi-calendar",
       errorMessage: "Data Inválida"
     },
@@ -51,6 +52,7 @@ export default {
       clearable: true,
       readonly: false,
       outlined: false,
+      backgroundColor: "grey",
       icon: "mdi-calendar",
       errorMessage: "Invalid date"
     }

@@ -4,19 +4,10 @@
       v-model="cmpValue"
       v-mask="cmpMask"
       v-bind:label="label"
-      v-bind:placeholder="placeholder"
-      v-bind:readonly="readonly"
-      v-bind:disabled="disabled"
-      v-bind:outlined="outlined"
-      v-bind:dense="dense"
-      v-bind:hide-details="hideDetails"
-      v-bind:error="error"
-      v-bind:rules="rules"
-      v-bind:clearable="clearable"
-      v-bind:backgroundColor="backgroundColor"
       v-bind:color="color"
       v-bind:prepend-icon="options.icon"
       v-bind:hint="showHint === true ? options.errorMessage : ''"
+      v-bind="properties"
       v-on:keyup="emit($event.target.value)"
       v-on:change="$emit('change')"
       v-on:input="$emit('input')"
@@ -43,47 +34,12 @@ export default {
     },
     label: {
       type: String,
-      default: ""
+
     },
-    placeholder: {
-      type: String,
-      default: undefined
-    },
-    readonly: {
-      type: Boolean,
-      default: false
-    },
-    dense: {
-      type: Boolean,
-      default: false
-    },
-    error: {
-      type: Boolean,
-      default: false
-    },
-    hideDetails: {
-      type: [Boolean, String],
-      default: false
-    },
-    rules: {
-      type: [Array, String],
-      default: () => []
-    },
-    disabled: {
-      type: Boolean,
-      default: false
-    },
-    outlined: {
-      type: Boolean,
-      default: false
-    },
-    clearable: {
-      type: Boolean,
-      default: false
-    },
-    backgroundColor: {
-      type: String,
-      default: "white"
+    // v-text-field properties
+    properties: {
+      type: Object,
+      default: null
     },
     options: {
       type: Object,
@@ -91,7 +47,7 @@ export default {
         return {
           format: "DD/MM/YYYY",
           icon: "mdi-calendar",
-          errorMessage: "Data Inválida",
+          errorMessage: "Invalid Date",
         };
       },
     },

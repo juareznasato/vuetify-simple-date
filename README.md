@@ -1,9 +1,7 @@
 # vuetify-simple-date
-
 If you use Vuejs with Vuetify and you need a component to input mask dates working in milliseconds. Maybe it can help you.
 
-
-input:
+input: 
 - 14/05/2019
 
 v-model: (milliseconds)
@@ -44,9 +42,12 @@ export default {
   data: () => ({
     value: 1569717750000,
     label: "Date yyyy-mm-dd hh:mm:ss",
-    clearable: true,
-    readonly: false,
-    outlined: true,
+    // v-text-field properties
+    properties: {
+      clearable: true,
+      readonly: false,
+      outlined: true,
+    },
     options: {
       format: "YYYY-MM-DD",     // or other formats. YYYY-MM-DD HH:mm:ss for example
       icon: "mdi-calendar",
@@ -56,16 +57,4 @@ export default {
 };
 </script>
 ```
-## v-text-field properties:
-```
- - label, 
- - placeholder,
- - readonly,
- - dense,
- - error,
- - hideDetails,
- - rules,
- - disabled,
- - outlined,
- - clearable,
- - backgroundColor
+

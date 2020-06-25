@@ -12,10 +12,7 @@
             <VuetifySimpleDate
               v-model="value"
               v-bind:label="label"
-              v-bind:clearable="clearable"
-              v-bind:readonly="readonly"
-              v-bind:outlined="outlined"
-              v-bind:backgroundColor="backgroundColor"
+              v-bind:properties="properties"
               v-bind:options="options"
             />
             Parent v-model: {{ value }} milliseconds
@@ -26,10 +23,7 @@
             <VuetifySimpleDate
               v-model="value2"
               v-bind:label="label2"
-              v-bind:clearable="clearable2"
-              v-bind:readonly="readonly2"
-              v-bind:outlined="outlined2"
-              v-bind:backgroundColor="backgroundColor2"
+              v-bind:properties="properties2"
               v-bind:options="options2"
             />
             Parent v-model: {{ value2 }} milliseconds
@@ -51,10 +45,14 @@ export default {
   data: () => ({
     value: 1569639600000, // 1577239200000=>12/05/2019 00:00:00  1557673468418=>12/05/2019 12:04:28
     label: "Data dd/mm/aaaa",
-    clearable: true,
-    readonly: false,
-    outlined: true,
-    backgroundColor: "grey",
+    // v-text-field properties
+    properties: {
+      clearable: true,
+      readonly: false,
+      outlined: true,
+      placeholder: " ",
+      backgroundColor: "grey",
+    },
     options: {
       format: "DD/MM/YYYY", // DD/MM/YYYY HH:mm:ss
       icon: "mdi-calendar",
@@ -63,10 +61,13 @@ export default {
 
     value2: 1569717750000, // 1577239200000=>12/05/2019 00:00:00  1557673468418=>12/05/2019 12:04:28
     label2: "Date yyyy-mm-dd hh:mm:ss",
-    clearable2: true,
-    readonly2: false,
-    outlined2: true,
-    backgroundColor2: "grey",
+    // v-text-field properties
+    properties2: {
+      clearable: true,
+      readonly: false,
+      outlined: true,
+      backgroundColor: "grey",
+    },
     options2: {
       format: "YYYY-MM-DD HH:mm:ss", // DD/MM/YYYY HH:mm:ss
       icon: "mdi-calendar",

@@ -24,13 +24,6 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
-  "dependencies": {
-    "core-js": "^2.6.5",
-    "moment": "^2.24.0",
-    "vue": "^2.6.10",
-    "vue-the-mask": "^0.11.1",
-    "vuetify": "^2.0.19"
-  },
   "devDependencies": {
     "@mdi/font": "^4.4.95",
     "@vue/cli-plugin-babel": "^3.11.0",
